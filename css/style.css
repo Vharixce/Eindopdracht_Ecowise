@@ -121,7 +121,7 @@ header p {
     justify-content: center;
 
     transition: all 0.5s ease;
-    max-width: 95vw;
+    max-width: 100vw;
     max-height: fit-content;
     padding-bottom: 3%;
 
@@ -189,6 +189,7 @@ header p {
     display: flex;
     flex-direction: row;
     gap: 3vw;
+
 }
 
 .onderElkaar2 {
@@ -197,12 +198,11 @@ header p {
     background-color: rgb(169, 221, 190);
     border: 0.3rem solid rgb(82, 96, 161);
     border-radius: 1rem;
-    width: 30vw;
+    width: 40vw;
     max-height: max-content;
     transition: all 0.3s ease-in-out;
     transform: scale(100%);
     font-size: 1rem;
-    max-width: 30%;
 
 }
 
@@ -211,7 +211,7 @@ header p {
 }
 
 .smallpic {
-    border-radius: 0.7rem;
+    border-radius: 0.8rem;
     max-width: 100%;
 
     object-fit: cover;
@@ -314,6 +314,10 @@ input:invalid {
 input[id=message] {
     padding: 2rem 0;
     font-size: 1rem;
+}
+input[id=date] {
+display: flex;
+
 }
 
 select {
@@ -466,7 +470,7 @@ a {
         flex-direction: column;
     }
     .onderElkaar2{
-        max-width: 90%;
+        max-width: 100%;
     }
 
 }
@@ -486,6 +490,7 @@ a {
     }
     .onderElkaar2 {
         width: 90vw;
+        max-width: 100%;
     }
     header{
     max-height: fit-content;
@@ -521,15 +526,17 @@ background-size: auto;
     .naastElkaar2 {
         display: flex;
         flex-direction: column;
+        
+        
     }
+
 
     .paginaRand {
         max-width: 100vw;
+        
     }
 
-    .onderElkaar2 {
-        width: 90vw;
-    }
+
 
     .navigatieKnoppen a {
         display: flex;
@@ -551,11 +558,13 @@ background-size: auto;
         max-height: 30vh;
         width: 100%;
         object-fit: cover;
+        justify-content: center;
     }
 
     .paginaRand2 {
         max-width: 100vw;
         padding-top: 5vh;
+        
     }
 
     .verticaal {
