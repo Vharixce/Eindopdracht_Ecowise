@@ -1,0 +1,568 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgb(135, 194, 158);
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+    max-width: 100vw;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    margin: 0;
+    gap: 0;
+    position: sticky;
+    justify-content: space-between;
+    border-bottom: 0.5vh solid rgb(82, 161, 114);
+    background-color: rgb(243, 242, 242);
+    z-index: 1;
+    max-width: 100vw;
+}
+
+nav div {
+
+    margin-right: 8vw;
+    margin-bottom: 0.9vh;
+    padding-top: 2vh;
+}
+
+.logo {
+    margin-top: 0;
+    margin-left: 8vw;
+    max-height: 4vh;
+}
+
+.navigatieKnoppen a {
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    padding: 1vh 2vw;
+    margin: 0;
+    gap: 0;
+    transition: all .4s ease;
+    background-image: linear-gradient(rgb(82, 161, 114) 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 100% 250%;
+    background-position: 2rem -3rem;
+    font-size: 0.9rem;
+    max-width: 100vw;
+}
+
+.navigatieKnoppen a:hover {
+
+    color: white;
+    background-position: 2rem -5.5rem;
+}
+
+.navigatieKnoppen .inlog {
+    background-image: linear-gradient(rgb(82, 96, 161) 50%, rgba(255, 255, 255, 0) 30%);
+    background-size: 100% 250%;
+    background-position: 1rem -3rem;
+}
+
+.stars {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.2rem rgb(0, 0, 0);
+}
+
+header {
+    background-image: url(https://wallpaper-house.com/data/out/12/wallpaper2you_513542.jpg);
+
+
+
+    object-fit: cover;
+
+
+    margin: 0;
+    min-height: 10vw;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    filter: brightness(100%);
+    filter: hue-rotate(0deg);
+
+    transition: all 0.5s ease;
+    max-width: 100vw;
+    
+}
+
+header:hover {
+
+    filter: brightness(115%);
+    filter: hue-rotate(-30deg);
+    max-width: 100vw;
+}
+
+header p {
+    font-weight: 600;
+    max-width: 100vw;
+    
+}
+
+.line {
+    border-bottom: 0.5vh solid rgb(82, 161, 114);
+}
+
+.onderElkaar {
+    color: white;
+    padding-top: 2%;
+    text-align: center;
+    justify-content: center;
+
+    transition: all 0.5s ease;
+    max-width: 95vw;
+    max-height: fit-content;
+    padding-bottom: 3%;
+
+}
+
+.textShadow {
+    text-shadow: 0rem 0rem 0.5rem black, 0rem 0rem 1rem black;
+}
+
+.onderElkaar:hover {
+    transform: scale(105%);
+}
+
+.onderElkaar p {
+    padding-right: 35%;
+    padding-left: 35%;
+    text-align: center;
+}
+
+.naastElkaar {
+    display: flex;
+    justify-content: center;
+    gap: 0vw;
+}
+
+.naastElkaar a {
+    text-decoration: none;
+
+    padding: 1vh 1.5vw;
+    border: 0.0 solid black;
+    color: black;
+    background-color: rgb(135, 194, 158);
+    transition: all .2s ease;
+    font-size: 1rem;
+    transform: skew(-12deg);
+    max-width: 30vw;
+
+}
+
+.naastElkaar a:hover {
+    color: rgb(139, 40, 0);
+    background-color: rgb(191, 255, 167);
+
+    transform: skew(12deg);
+    z-index: 1;
+}
+
+.paginaRand {
+    max-width: 70vw;
+    padding-top: 5vh;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#alleProducten {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.naastElkaar2 {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.onderElkaar2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(169, 221, 190);
+    border: 0.3rem solid rgb(82, 96, 161);
+    border-radius: 1rem;
+    width: 30vw;
+    max-height: max-content;
+    transition: all 0.3s ease-in-out;
+    transform: scale(100%);
+    font-size: 1rem;
+
+}
+
+.onderElkaar2:hover {
+    transform: scale(103%);
+}
+
+.smallpic {
+    border-radius: 0.7rem;
+    max-width: 100%;
+
+    object-fit: cover;
+    max-height: 12vw;
+    transform: scale(100%);
+}
+
+.spaceBetween{
+    margin: 4vh;
+    justify-content: space-between;
+
+
+    /*WAAROM WERKT DIT NIET??*/
+
+}
+article h3{
+    font-size: 1.5rem;
+}
+main {
+    max-width: 100vw;
+}
+
+main a {
+    display: flex;
+    max-width: fit-content;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    background-color: rgb(135, 194, 158);
+    border-radius: 0.3rem;
+    transition: all .2s ease;
+    color: black;
+    transform: skew(-8deg);
+    font-size: 1rem;
+    justify-content: bottom;
+}
+
+main a:hover {
+
+    background-color: rgb(82, 96, 161);
+    color: rgb(255, 255, 255);
+    transform: skew(8deg);
+}
+
+
+
+.omFormHeen {
+    background-color: rgb(169, 221, 190);
+    margin-top: 10vh;
+
+}
+
+.bigLetters {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+form {
+
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+input {
+    font-size: 0.9rem;
+    padding: 6px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    border: 0.2rem solid rgb(38, 153, 67);
+    transform: skew(-8deg);
+    transition: all 0.2s ease;
+    display: flex;
+
+}
+
+input:hover {
+
+    border: 0.2rem solid rgb(0, 80, 199);
+    background-color: azure;
+}
+
+input:active {
+
+    border: 0.2rem solid rgb(0, 80, 199);
+    background-color: azure;
+}
+
+input:valid {
+    border: 0.2rem solid rgb(0, 80, 199);
+    background-color: rgb(176, 255, 189);
+}
+
+input:invalid {
+    border: 3px solid rgb(119, 0, 0);
+    background-color: azure;;
+}
+
+input[id=message] {
+    padding: 2rem 0;
+    font-size: 1rem;
+}
+
+select {
+    padding: 6px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    border: 0.2rem solid rgb(38, 153, 67);
+    transform: skew(-8deg);
+    background-color: azure;
+
+}
+
+select:hover {
+    border: 0.2rem solid rgb(0, 80, 199);
+    background-color: azure;
+}
+
+button {
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 0.3rem solid rgb(0, 80, 199);
+    background-color: azure;
+    color: black;
+    cursor: pointer;
+    transform: skew(-8deg);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(171, 216, 255);
+    color: black;
+    transform: skew(8deg)
+}
+
+button:active {
+    background-color: rgb(0, 80, 199);
+    color: white;
+}
+
+form p {
+    text-align: left;
+
+}
+
+.verticaal {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.horizontaal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.horizontaal2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.afstand {
+    margin: .5rem;
+}
+
+footer {
+    background-color: rgb(1, 0, 43);
+
+}
+
+
+
+.paginaRand2 {
+
+    max-width: 90vw;
+    padding-top: 5vh;
+
+}
+
+footer p,
+a {
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+
+}
+
+.center2 {
+    display: flex;
+    justify-content: center;
+}
+
+.verticaal2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo2 {
+    margin-top: 0;
+
+    max-height: 4vh;
+    max-width: 8vh;
+}
+.logo3 {
+    margin-top: 0;
+
+    max-height: 4vh;
+    max-width: 4vh;
+    filter:grayscale(100%);
+}
+
+.logo3:hover {
+    filter:grayscale(0);
+}
+
+
+
+.horizontaal3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+    gap: 10rem;
+
+}
+
+.horizontaal4 {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 1rem 1rem 10rem;
+
+    gap: 2rem;
+
+}
+
+.horizontaal4 a:hover {
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width:480px) {
+    nav {
+        display: flex;
+        text-align: center;
+        margin: 0;
+    }
+
+    .logo {
+        max-width: 9vh;
+        margin: 1rem;
+    }
+
+    header {
+        min-height: 5vw;
+        max-height: 70vw;
+        max-width: 100vw;
+    }
+
+    .naastElkaar2 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .paginaRand {
+        max-width: 100vw;
+    }
+
+    .onderElkaar2 {
+        width: 90vw;
+    }
+
+    .navigatieKnoppen a {
+        display: flex;
+        flex-direction: column;
+        margin-right: 30vw;
+        margin-bottom: 1vh;
+    }
+
+    nav {
+        position: relative;
+        max-width: 100vw;
+    }
+
+    .onderElkaar p {
+        padding-right: 10%;
+        padding-left: 20%;
+        text-align: center;
+    }
+
+    .onderElkaar2 img {
+        border-radius: 1rem;
+        max-height: 30vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .paginaRand2 {
+        max-width: 100vw;
+        padding-top: 5vh;
+    }
+
+    .verticaal {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    .verticaal2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+
+    .center2 {
+        display: flex;
+        justify-content: left;
+    }
+
+    .horizontaal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 100vw;
+        margin-bottom: 0.5rem;
+    }
+
+    .afstand {
+        margin: .5rem;
+    }
+
+    .horizontaal3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        gap: 1rem;
+
+
+    }
+
+    .horizontaal4 {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+
+        gap: 2rem;
+
+    }
+}
