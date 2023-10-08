@@ -368,13 +368,14 @@ form p {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    min-width: 45%;
 }
 
 .horizontaal {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 10%;
 
 }
 
