@@ -50,7 +50,7 @@ nav div {
     transition: all .4s ease;
     background-image: linear-gradient(rgb(82, 161, 114) 50%, rgba(255, 255, 255, 0) 50%);
     background-size: 200% 300%;
-    background-position: 100% -200%;
+    background-position: 100% -210%;
     font-size: 0.9rem;
     max-width: 100vw;
 
@@ -65,7 +65,7 @@ nav div {
 .navigatieKnoppen .inlog {
     background-image: linear-gradient(rgb(82, 96, 161) 50%, rgba(255, 255, 255, 0) 30%);
     background-size: 200% 300%;
-    background-position: 100% -200%;
+    background-position: 100% -210%;
 
 }
 
